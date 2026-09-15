@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <title>Kata Fahim MTK Seru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="opening-screen" class="opening-screen" aria-labelledby="opening-title">
+        <div class="lazy-note">
+            <p id="opening-title">tugas mtk bola</p>
+            <p>oleh: Farhan, Fahim, Ghiyast</p>
+            <p>kelas: 9 Ibnu shina</p>
+            <p>maaf bu saya gak sempet bikin ppt bagus soalnya sibuk</p>
+            <button id="opening-trigger" type="button">udah siap belum?</button>
+        </div>
+    </section>
+
+    <main id="presentation" class="presentation game-screen" aria-label="Presentasi bola" hidden>
+        <section class="sphere-stage" aria-label="Visualisasi bola 3D">
+            <div class="stage-header">
+                <span class="eyebrow">Geometri · 01</span>
+                <button id="ice-launch-button" class="ice-launch-button" type="button">Ini Mecah Es <span aria-hidden="true">↗</span></button>
+            </div>
+
+            <div id="sphere-canvas" class="sphere-canvas" role="button" tabindex="0" aria-label="Klik untuk mengubah bola 3D menjadi gambar bola 2D">
+                <div class="circle-diagram" aria-hidden="true">
+                    <svg viewBox="0 0 560 450" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient id="ball-fill" cx="35%" cy="28%" r="72%">
+                                <stop offset="0" stop-color="#ffffff"/>
+                                <stop offset=".72" stop-color="#dbeafe"/>
+                                <stop offset="1" stop-color="#bfdbfe"/>
+                            </radialGradient>
+                        </defs>
+                        <circle cx="280" cy="225" r="156" fill="url(#ball-fill)" stroke="#2563eb" stroke-width="4"/>
+                        <ellipse cx="280" cy="225" rx="156" ry="58" fill="none" stroke="#60a5fa" stroke-width="2" opacity=".75"/>
+                        <ellipse cx="280" cy="225" rx="58" ry="156" fill="none" stroke="#60a5fa" stroke-width="2" opacity=".75"/>
+                        <line x1="280" y1="225" x2="436" y2="225" stroke="#0f172a" stroke-width="4"/>
+                        <line x1="124" y1="225" x2="436" y2="225" stroke="#0f172a" stroke-width="3" stroke-dasharray="8 7"/>
+                        <circle cx="280" cy="225" r="7" fill="#2563eb"/>
+                        <path d="M 280 225 L 300 218 L 306 238" fill="none" stroke="#2563eb" stroke-width="2"/>
+                        <text x="263" y="218" class="diagram-point">O</text>
+                        <text x="335" y="210" class="diagram-callout">r = jari-jari</text>
+                        <text x="244" y="275" class="diagram-callout">d = diameter</text>
+                        <text x="247" y="48" class="diagram-callout">gambar bola</text>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="stage-copy">
+                <p class="display-label">Bangun Ruang</p>
+                <h1>Bola<span class="blue-dot">.</span></h1>
+                <p>Bangun ruang yang seluruh titik pada permukaannya memiliki jarak sama dari satu titik pusat.</p>
+            </div>
+
+            <button id="explore-button" class="explore-button" type="button" aria-controls="lesson-panel" aria-expanded="false">
+                <span>Lihat gambar bola</span>
+                <span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+        </section>
+
+        <aside id="lesson-panel" class="lesson-panel" aria-labelledby="lesson-title">
+            <div class="panel-inner">
+                <div class="panel-topline">
+                    <span>Materi bola</span>
+                    <button id="close-panel" class="close-button" type="button" aria-label="Tutup materi">×</button>
+                </div>
+
+                <div class="lesson-content">
+                    <p class="section-number">01 / 04</p>
+                    <h2 id="lesson-title">Mengenal<br><em>bola</em></h2>
+                    <p class="intro">Bola adalah bangun ruang yang seluruh titik pada permukaannya memiliki jarak yang sama dari satu titik pusat.</p>
+
+                    <div class="example-box">
+                        <span class="formula-label">Gambar bola</span>
+                        <p><strong>O</strong> adalah titik pusat, <strong>r</strong> adalah jari-jari, dan <strong>d</strong> adalah diameter.</p>
+                        <span class="formula">d = 2r</span>
+                    </div>
+
+                    <div class="lesson-divider"></div>
+
+                    <section id="parts-section" class="material-section">
+                        <p class="section-number">02 / 04</p>
+                        <h3>Ciri-ciri bola</h3>
+                        <ol class="feature-list">
+                            <li>Memiliki 1 sisi, yaitu sisi lengkung.</li>
+                            <li>Tidak memiliki rusuk.</li>
+                            <li>Tidak memiliki titik sudut.</li>
+                            <li>Memiliki 1 titik pusat.</li>
+                            <li>Memiliki jari-jari (r), yaitu jarak dari pusat ke permukaan bola.</li>
+                            <li>Memiliki diameter (d) yang panjangnya 2 × r.</li>
+                            <li>Bentuknya simetris.</li>
+                        </ol>
+                    </section>
+
+                    <div class="lesson-divider"></div>
+
+                    <section class="material-section">
+                        <p class="section-number">03 / 04</p>
+                        <h3>Benda berbentuk bola</h3>
+                        <div class="parts-list examples-list">
+                            <article><strong>⚽ Bola sepak</strong><p>Digunakan dalam permainan sepak bola.</p></article>
+                            <article><strong>🏀 Bola basket</strong><p>Digunakan dalam olahraga basket.</p></article>
+                            <article><strong>🎾 Bola tenis</strong><p>Digunakan dalam permainan tenis.</p></article>
+                            <article><strong>🌍 Globe atau Bumi</strong><p>Contoh bentuk bola dalam kehidupan sehari-hari.</p></article>
+                            <article><strong>Kelereng</strong><p>Benda kecil berbentuk bola.</p></article>
+                            <article><strong>Bola lampu tertentu</strong><p>Beberapa lampu memiliki bentuk mendekati bola.</p></article>
+                        </div>
+                        <p class="intro application-note">Bentuk bola digunakan karena dapat menggelinding ke berbagai arah dan memiliki bentuk yang simetris.</p>
+                    </section>
+
+                    <div class="lesson-divider"></div>
+
+                    <section class="material-section">
+                        <p class="section-number">04 / 05</p>
+                        <h3>Rumus bola</h3>
+                        <div class="formula-box"><span class="formula-label">Volume</span><span class="formula">V = <sup>4</sup>⁄<sub>3</sub>πr<sup>3</sup></span></div>
+                        <div class="formula-box"><span class="formula-label">Luas permukaan</span><span class="formula">L = 4πr<sup>2</sup></span></div>
+                        <div class="formula-box"><span class="formula-label">Diameter dan jari-jari</span><span class="formula">d = 2r<br>r = d⁄2</span></div>
+                        <p class="tip"><span>Keterangan</span> V = volume, r = jari-jari, dan π = 22⁄7 atau 3,14.</p>
+                    </section>
+
+                    <section class="material-section exercise-section">
+                        <p class="section-number">05 / 05</p>
+                        <h3>Latihan soal</h3>
+                        <article class="question-card">
+                            <span class="question-number">Soal 1</span>
+                            <p>Sebuah bola memiliki jari-jari 7 cm. Tentukan volumenya.</p>
+                            <div class="answer-row">
+                                <input id="volume-answer" type="text" inputmode="decimal" placeholder="Jawaban dalam cm³" aria-label="Jawaban soal volume">
+                                <button class="check-button" type="button" data-question="volume">Cek</button>
+                            </div>
+                            <p id="volume-feedback" class="quiz-feedback" aria-live="polite"></p>
+                        </article>
+                        <article class="question-card">
+                            <span class="question-number">Soal 2</span>
+                            <p>Sebuah bola memiliki jari-jari 14 cm. Tentukan luas permukaannya.</p>
+                            <div class="answer-row">
+                                <input id="surface-answer" type="text" inputmode="decimal" placeholder="Jawaban dalam cm²" aria-label="Jawaban soal luas permukaan">
+                                <button class="check-button" type="button" data-question="surface">Cek</button>
+                            </div>
+                            <p id="surface-feedback" class="quiz-feedback" aria-live="polite"></p>
+                        </article>
+                    </section>
+                </div>
+
+                <div class="panel-footer">
+                    <span>Materi geometri dasar</span>
+                    <span class="footer-line"></span>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <section id="ice-overlay" class="ice-overlay" hidden aria-labelledby="ice-title">
+        <div class="ice-orbit orbit-one" aria-hidden="true"></div>
+        <div class="ice-orbit orbit-two" aria-hidden="true"></div>
+        <div class="ice-overlay-card">
+            <p class="ice-kicker">Ice breaking · 01</p>
+            <h2 id="ice-title">ICE BREAKING: MANA BOLA YANG ASLI SECARA MATEMATIKA?</h2>
+            <p class="ice-prompt">Pilih satu objek. Hanya satu yang benar-benar merupakan bangun ruang bola.</p>
+            <div id="ice-game-stage" class="ice-game-stage" role="group" aria-label="Lima pilihan objek bola">
+                <button class="guess-option" type="button" data-guess-index="0"><span class="guess-number">01</span><strong>⭕</strong><b>OBJEK A</b></button>
+                <button class="guess-option" type="button" data-guess-index="1"><span class="guess-number">02</span><strong>🔲</strong><b>OBJEK B</b></button>
+                <button class="guess-option" type="button" data-guess-index="2"><span class="guess-number">03</span><strong>🏉</strong><b>OBJEK C</b></button>
+                <button class="guess-option real-ball-option" type="button" data-guess-index="3"><span class="guess-number">04</span><div class="ball-preview" aria-hidden="true"><i></i><i></i><i></i></div><div id="ice-game-canvas" role="img" aria-label="Objek D"></div><b>OBJEK D</b></button>
+                <button class="guess-option" type="button" data-guess-index="4"><span class="guess-number">05</span><strong>👤</strong><b>OBJEK E</b></button>
+            </div>
+            <p id="ice-game-feedback" class="ice-game-feedback" aria-live="polite">Panah kanan/kiri untuk memilih. Klik juga boleh.</p>
+            <button id="ice-confirm-button" class="ice-confirm-button" type="button" hidden>Yakin gak nih?</button>
+            <p class="ice-key-hint">← → pilih bola · Enter konfirmasi</p>
+            <p id="ice-zonk" class="ice-zonk" aria-live="assertive"></p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
